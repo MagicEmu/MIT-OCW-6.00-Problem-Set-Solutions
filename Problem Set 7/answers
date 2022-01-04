@@ -1,0 +1,15 @@
+1. linear because it runs i times
+2. linear because it loops i times
+3. linear because it loops through s and so loops len(s) times
+4. linear because it loops through s1 and so loops len(s1) times
+5. step 1: s1 and s2 stay same
+   step 2: s1 and s2 stay same
+   step 3: s1's value changes to s2, s2 stay same
+   step 4: s1 stay same, s2's value changes to temp, temp's value is s1 before change
+   s1 -> s1 -> s2 -> s2
+   temp -> s1 -> s1 -> s1
+   s2 -> s2 -> s2 -> temp
+6. s1[1] -> s2 [2]
+   s2 [1] -> s1 [2]
+7. s [1,2,3] -> s [3,2,3] -> s [3,2,1] -> s [3,2,1] -> s [3,2,1]
+   temp 1 ------------------------------> temp 2
